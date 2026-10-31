@@ -1,6 +1,6 @@
 import math
 
-
+## Gestor principal
 class CalculadoraEngine:
 
     def __init__(self):

@@ -7,7 +7,7 @@ from tkinter import font
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from src.core import CalculadoraEngine
 
-
+# Interfaz clásica - modificar a criterio propio 
 class CalculadoraGUI:
 
     def __init__(self, root: tk.Tk):
@@ -67,7 +67,7 @@ class CalculadoraGUI:
         for j in range(4):
             frame_botones.columnconfigure(j, weight=1)
 
-        # Matriz de botones: (Texto, Fila, Columna, Tipo)
+        # Matriz de botones: orden (Texto, Fila, Columna, Tipo)
         botones = [
             ("%", 0, 0, "op_ind"),
             ("CE", 0, 1, "op_ind"),
@@ -99,7 +99,7 @@ class CalculadoraGUI:
             self._crear_boton(frame_botones, texto, fila, col, tipo)
 
     def _crear_boton(self, parent, texto: str, fila: int, col: int, tipo: str):
-        # Estilos según el tipo de botón
+        # Estilos según el tipo de botón elegido arbitrariamente Por lo general colores convencionales 
         if tipo == "num":
             bg, fg, font_use = "#FFFFFF", "#000000", self.fuente_botones
         elif tipo == "igual":
