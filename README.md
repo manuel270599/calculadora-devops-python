@@ -18,7 +18,7 @@ Aplicación de escritorio de calculadora estilo sistema operativo (Windows nativ
 ## 🚀 Hoja de Ruta (Sprints)
 - [x] **Sprint 1:** Motor Matemático (Core) & Cobertura de Pruebas $100\%$.
 - [x] **Sprint 2:** Interfaz Gráfica Responsiva (Tkinter) & Atajos de Teclado.
-- [ ] **Sprint 3:** Pipeline CI/CD con GitHub Actions & Generación del `.exe`.
+- [x] **Sprint 3:** Pipeline CI/CD con GitHub Actions & Generación del Ejecutable.
 
 ---
 
