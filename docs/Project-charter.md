@@ -50,22 +50,11 @@ El proyecto se dividirá en dos capas independientes:
 
 ## 5. Definición de Sprints (Metodología DevOps)
 
-### Sprint 1: Lógica Base & Pruebas Unitarias
-
-- Implementación de la clase `CalculadoraEngine`.
-- Cobertura de pruebas del 100 % sobre el core con `pytest`.
-
-### Sprint 2: Interfaz Gráfica & UX Idéntica a Computadora
-
-- Maquetación responsiva con `tkinter` (grid layout).
-- Mapeo de eventos de teclado.
-- Vinculación GUI ↔ Core.
-
-### Sprint 3: CI/CD Pipeline & Empaquetado
-
-- Creación del workflow `.github/workflows/ci.yml`.
-- Empaquetado automático con `PyInstaller`.
-- Publicación de releases y documentación del repositorio.
+| Sprint | Nombre | Actividades principales | Entregables |
+|:---:|---|---|---|
+| **Sprint 1** | Lógica Base y Pruebas Unitarias | - Implementación de la clase `CalculadoraEngine`.<br>- Desarrollo de operaciones matemáticas.<br>- Gestión de estados y operaciones encadenadas.<br>- Implementación de pruebas con `pytest`. | - `src/core.py`<br>- `tests/test_core.py`<br>- Cobertura del 100 % del Core. |
+| **Sprint 2** | Interfaz Gráfica y UX | - Diseño de la interfaz con `Tkinter`.<br>- Implementación del diseño mediante `grid layout`.<br>- Integración de eventos del teclado.<br>- Vinculación de la interfaz con el Core. | - `src/gui.py`<br>- Calculadora funcional.<br>- Interfaz gráfica estilo Windows 10/11. |
+| **Sprint 3** | CI/CD Pipeline y Empaquetado | - Configuración de GitHub Actions.<br>- Creación del workflow `.github/workflows/ci.yml`.<br>- Automatización de pruebas con `pytest`.<br>- Empaquetado con `PyInstaller`.<br>- Publicación de ejecutables y documentación. | - Workflow CI/CD funcional.<br>- Ejecutable `.exe` para Windows.<br>- Artefactos descargables desde GitHub Actions.<br>- Documentación del repositorio. |
 
 ## 6. Criterios de Aceptación (Definition of Done - DoD)
 
