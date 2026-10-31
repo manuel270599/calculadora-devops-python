@@ -2,39 +2,39 @@ name: Calculadora DevOps Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clonar el repositorio
-      uses: actions/checkout@v3
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
 
-    - name: Configurar Python 3.11
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.11"
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-    - name: Instalar dependencias
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pyinstaller
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
 
-    - name: Ejecutar Pruebas Unitarias y Cobertura
-      run: |
-        pytest --cov=src tests/
+      - name: Ejecutar Pruebas Unitarias y Cobertura
+        run: |
+          python -m pytest --cov=src tests/
 
-    - name: Empaquetar Aplicación con PyInstaller
-      run: |
-        pyinstaller --onefile --windowed --name CalculadoraDevOps --paths . src/gui.py
+      - name: Empaquetar Aplicación con PyInstaller
+        run: |
+          pyinstaller --onefile --windowed --name CalculadoraDevOps --paths . src/gui.py
 
-    - name: Subir Ejecutable como Artefacto de GitHub
-      uses: actions/upload-artifact@v3
-      with:
-        name: CalculadoraDevOps-Linux
-        path: dist/CalculadoraDevOps
+      - name: Subir Ejecutable como Artefacto de GitHub
+        uses: actions/upload-artifact@v4
+        with:
+          name: CalculadoraDevOps-Linux
+          path: dist/CalculadoraDevOps
