@@ -3,7 +3,7 @@
 Este proyecto cuenta con una canalización de Integración Continuada y Despliegue Continuo (CI/CD) definida en `.github/workflows/ci.yml`.
 
 ## Flujo del Pipeline (Workflows)
-
+  
 ```text
              [ Push / PR a main ]
                        |
@@ -35,6 +35,8 @@ Este proyecto cuenta con una canalización de Integración Continuada y Desplieg
                        v
        6. Publicación del Ejecutable
           como Artefacto en GitHub
+```
+
 
 ## Beneficios
 * **Calidad Garantizada:** Ninguna versión con fallos en el motor matemático se empaqueta.
