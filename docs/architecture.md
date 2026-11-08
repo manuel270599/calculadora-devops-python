@@ -2,6 +2,7 @@
 
 El proyecto aplica una separación estricta de responsabilidades (Patrón de diseño similar a MVC/MVP):
 
+
 ```text
 +-------------------------------------------------------+
 |                  Capa de Vista (gui.py)               |
@@ -21,6 +22,8 @@ El proyecto aplica una separación estricta de responsabilidades (Patrón de dis
 |  - Control de estados y memoria                       |
 |  - Operaciones matemáticas puras                      |
 +-------------------------------------------------------+
+```
+
 
 ### Ventajas de este diseño:
 1. **Mantenibilidad:** Si se desea cambiar Tkinter por PyQt o una interfaz web, la lógica interna (`core.py`) no sufre ningún cambio.
