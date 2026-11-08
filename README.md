@@ -10,7 +10,7 @@ Aplicación de escritorio de calculadora estilo sistema operativo (Windows nativ
 ---
 
 ##  Documentación del Proyecto
-* [Project Charter / Acta de Constitución](docs/project-charter.md)
+* [Project Charter / Acta de Constitución](docs/Project-charter.md)
 * [Arquitectura de Software](docs/architecture.md)
 
 ---
