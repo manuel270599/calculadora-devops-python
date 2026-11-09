@@ -10,12 +10,12 @@ Aplicación de escritorio de calculadora estilo sistema operativo (Windows nativ
 ---
 
 ##  Documentación del Proyecto
-* [Project Charter / Acta de Constitución](docs/Project-charter.md)
+* [Project Charter](docs/Project-charter.md)
 * [Arquitectura de Software](docs/architecture.md)
 
 ---
 
-## 🚀 Hoja de Ruta (Sprints)
+##  Hoja de Ruta (Sprints)
 - [x] **Sprint 1:** Motor Matemático (Core) & Cobertura de Pruebas $100\%$.
 - [x] **Sprint 2:** Interfaz Gráfica Responsiva (Tkinter) & Atajos de Teclado.
 - [x] **Sprint 3:** Pipeline CI/CD con GitHub Actions & Generación del Ejecutable.
@@ -40,3 +40,15 @@ python src/gui.py
 # Ejecutar pruebas unitarias
 pytest
 ```
+## Ejecución, vista y testing
+```
+Interfaz básica con operaciones elementales
+```
+
+<p align="center">
+<img width="336" height="509" alt="image" src="https://github.com/user-attachments/assets/b45fc0ef-baa6-4339-a65e-24ffcc70f850" />
+</p>
+
+<p align="center">
+<img alt="image" src="https://github.com/manuel270599/calculadora-devops-python/blob/main/Imagenes/Sprint1_test.png" />
+</p>
